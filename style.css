@@ -81,7 +81,9 @@ li {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #iconApp {
+  float: left;
   margin-right: 10px;
+  font-size: 50px;
 }
 #sunny {
   margin-top: 50px;
