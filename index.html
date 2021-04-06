@@ -29,6 +29,100 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm w-100"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+        <h1 id="city"></h1>
+        <ul>
+          <li id="date"></li>
+          <li id="description"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <div class="float-left">
+                <img id="iconApp" src="cloud-sun.svg" width="60px" />
+                <span class="temperature" id="temperature"></span
+                ><span class="units">°C</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" id="sunny">
+          <div class="col-3" id="one">
+            <center>
+              <small> Wed. </small>
+              <br />
+              <img src="" alt="sun" width="20px" />
+              <br />
+              <small> 12° </small>
+              <br />
+            </center>
+          </div>
+          <div class="col-3" id="two">
+            <center>
+              <small> Fri.</small>
+              <br />
+              <img src="cloud-sun.svg" alt="suncloud" width="20px" />
+              <br />
+              <small> 10°</small>
+            </center>
+          </div>
+          <div class="col-3" id="three">
+            <center>
+              <small> Thu.</small>
+              <br />
+              <img src="cloud-sun.svg" alt="suncloud" width="20px" />
+              <br />
+              <small> 14°</small>
+            </center>
+          </div>
+          <div class="col-3" id="four">
+            <center>
+              <small> Sat.</small>
+              <br />
+              <img src="cloud-sun.svg" alt="soundcloud" width="20px" />
+              <br />
+              <small> 7°</small>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
